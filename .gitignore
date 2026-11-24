@@ -1,0 +1,44 @@
+# Allowlist: only these top-level items may ever be published
+/*
+!/.github/
+!/.gitignore
+!/README.md
+!/backend/
+!/frontend/
+
+# Secrets and personal data: never publish
+accounts.json
+watchlist.json
+.env
+.env.local
+
+# Local output
+__pycache__/
+*.pyc
+*.log
+*.pid
+*_log.txt
+..logsbackend.log
+logs/
+site/
+backup-*/
+screenshot*.png
+node_modules/
+frontend/build/
+frontend/public/data/
+frontend/public/data.tmp/
+
+# Local-only tools, not needed by the public site
+*.bat
+stop-scanner.ps1
+backend/copy_*.py
+backend/condor_*.py
+backend/stream_manager.py
+backend/main.py
+frontend/src/components/CopyTrader.jsx
+frontend/src/components/CondorScanner.jsx
+backend/requirements.txt
+backend/news_fetcher.py
+backend/watchlist.py
+frontend/README.md
+.claude/
